@@ -1,6 +1,6 @@
 import re
 from theplease.utils import (cache, for_app, replace_argument, replace_command,
-                           which)
+                             which)
 from subprocess import PIPE, Popen
 
 

@@ -137,5 +137,5 @@ def configured_successfully(configuration_details):
 def version(theplease_version, python_version, shell_info):
     sys.stderr.write(
         u'The Please {} using Python {} and {}\n'.format(theplease_version,
-                                                       python_version,
-                                                       shell_info))
+                                                         python_version,
+                                                         shell_info))

@@ -2,7 +2,7 @@ from collections import Counter
 import re
 from theplease.system import Path
 from theplease.utils import (get_valid_history_without_current,
-                           memoize, replace_argument)
+                             memoize, replace_argument)
 from theplease.shells import shell
 
 
