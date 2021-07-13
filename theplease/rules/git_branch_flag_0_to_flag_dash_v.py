@@ -1,6 +1,6 @@
-from thefuck.shells import shell
-from thefuck.specific.git import git_support
-from thefuck.utils import memoize
+from theplease.shells import shell
+from theplease.specific.git import git_support
+from theplease.utils import memoize
 
 '''
 keys are fatfingered entry, values are two-element tuples
