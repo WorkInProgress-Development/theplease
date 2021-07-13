@@ -1,7 +1,7 @@
 import pytest
 
-from thefuck.types import Command
-from thefuck.rules.git_push_without_commits import (
+from theplease.types import Command
+from theplease.rules.git_push_without_commits import (
     fix,
     get_new_command,
     match,
