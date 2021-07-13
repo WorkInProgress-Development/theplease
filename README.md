@@ -1,11 +1,11 @@
-# The Fuck [![Version][version-badge]][version-link] [![Build Status][workflow-badge]][workflow-link] [![Coverage][coverage-badge]][coverage-link] [![MIT License][license-badge]](LICENSE.md)
+# The Please [![Version][version-badge]][version-link] [![Build Status][workflow-badge]][workflow-link] [![Coverage][coverage-badge]][coverage-link] [![MIT License][license-badge]](LICENSE.md)
 
-*The Fuck* is a magnificent app, inspired by a [@liamosaur](https://twitter.com/liamosaur/)
+*The Please* is a magnificent app, inspired by a [@liamosaur](https://twitter.com/liamosaur/)
 [tweet](https://twitter.com/liamosaur/status/506975850596536320),
 that corrects errors in previous console commands.
 
 
-Is *The Fuck* too slow? [Try the experimental instant mode!](#experimental-instant-mode)
+Is *The Please* too slow? [Try the experimental instant mode!](#experimental-instant-mode)
 
 [![gif with examples][examples-link]][examples-link]
 
@@ -16,7 +16,7 @@ More examples:
 E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
 E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 
-➜ fuck
+➜ please
 sudo apt-get install vim [enter/↑/↓/ctrl+c]
 [sudo] password for nvbn:
 Reading package lists... Done
@@ -31,7 +31,7 @@ To push the current branch and set the remote as upstream, use
     git push --set-upstream origin master
 
 
-➜ fuck
+➜ please
 git push --set-upstream origin master [enter/↑/↓/ctrl+c]
 Counting objects: 9, done.
 ...
@@ -44,7 +44,7 @@ No command 'puthon' found, did you mean:
  Command 'python' from package 'python3' (main)
 zsh: command not found: puthon
 
-➜ fuck
+➜ please
 python [enter/↑/↓/ctrl+c]
 Python 3.4.2 (default, Oct  8 2014, 13:08:17)
 ...
@@ -57,7 +57,7 @@ git: 'brnch' is not a git command. See 'git --help'.
 Did you mean this?
     branch
 
-➜ fuck
+➜ please
 git branch [enter/↑/↓/ctrl+c]
 * master
 ```
@@ -69,7 +69,7 @@ git branch [enter/↑/↓/ctrl+c]
 Did you mean this?
          repl
 
-➜ fuck
+➜ please
 lein repl [enter/↑/↓/ctrl+c]
 nREPL server started on port 54848 on host 127.0.0.1 - nrepl://127.0.0.1:54848
 REPL-y 0.3.1
@@ -84,7 +84,7 @@ If you're not afraid of blindly running corrected commands, the
 E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
 E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 
-➜ fuck
+➜ please
 sudo apt-get install vim
 [sudo] password for nvbn:
 Reading package lists... Done
@@ -114,48 +114,48 @@ Reading package lists... Done
 
 ## Installation
 
-On macOS, you can install *The Fuck* via [Homebrew][homebrew] (or via [Linuxbrew][linuxbrew] on Linux):
+On macOS, you can install *The Please* via [Homebrew][homebrew] (or via [Linuxbrew][linuxbrew] on Linux):
 
 ```bash
-brew install thefuck
+brew install theplease
 ```
 
-On Ubuntu / Mint, install *The Fuck* with the following commands:
+On Ubuntu / Mint, install *The Please* with the following commands:
 ```bash
 sudo apt update
 sudo apt install python3-dev python3-pip python3-setuptools
-sudo pip3 install thefuck
+sudo pip3 install theplease
 ```
 
-On FreeBSD, install *The Fuck* with the following commands:
+On FreeBSD, install *The Please* with the following commands:
 ```bash
-pkg install thefuck
+pkg install theplease
 ```
 
-On ChromeOS, install *The Fuck* using [chromebrew](https://github.com/skycocker/chromebrew) with the following command:
+On ChromeOS, install *The Please* using [chromebrew](https://github.com/skycocker/chromebrew) with the following command:
 ```bash
-crew install thefuck
+crew install theplease
 ```
 
-On other systems, install *The Fuck*  by using `pip`:
+On other systems, install *The Please*  by using `pip`:
 
 ```bash
-pip install thefuck
+pip install theplease
 ```
 
-[Alternatively, you may use an OS package manager (OS X, Ubuntu, Arch).](https://github.com/nvbn/thefuck/wiki/Installation)
+[Alternatively, you may use an OS package manager (OS X, Ubuntu, Arch).](https://github.com/nvbn/theplease/wiki/Installation)
 
 <a href='#manual-installation' name='manual-installation'>#</a>
 It is recommended that you place this command in your `.bash_profile`,
 `.bashrc`, `.zshrc` or other startup script:
 
 ```bash
-eval $(thefuck --alias)
+eval $(theplease --alias)
 # You can use whatever you want as an alias, like for Mondays:
-eval $(thefuck --alias FUCK)
+eval $(theplease --alias FUCK)
 ```
 
-[Or in your shell config (Bash, Zsh, Fish, Powershell, tcsh).](https://github.com/nvbn/thefuck/wiki/Shell-aliases)
+[Or in your shell config (Bash, Zsh, Fish, Powershell, tcsh).](https://github.com/nvbn/theplease/wiki/Shell-aliases)
 
 Changes are only available in a new shell session. To make changes immediately
 available, run `source ~/.bashrc` (or your shell config file like `.zshrc`).
@@ -163,13 +163,13 @@ available, run `source ~/.bashrc` (or your shell config file like `.zshrc`).
 To run fixed commands without confirmation, use the `--yeah` option (or just `-y` for short, or `--hard` if you're especially frustrated):
 
 ```bash
-fuck --yeah
+please --yeah
 ```
 
 To fix commands recursively until succeeding, use the `-r` option:
 
 ```bash
-fuck -r
+please -r
 ```
 
 ##### [Back to Contents](#contents)
@@ -177,20 +177,20 @@ fuck -r
 ## Updating
 
 ```bash
-pip3 install thefuck --upgrade
+pip3 install theplease --upgrade
 ```
 
-**Note: Alias functionality was changed in v1.34 of *The Fuck***
+**Note: Alias functionality was changed in v1.34 of *The Please***
 
 ## Uninstall
 
-To remove *The Fuck*, reverse the installation process:
-- erase or comment *thefuck* alias line from your Bash, Zsh, Fish, Powershell, tcsh, ... shell config
+To remove *The Please*, reverse the installation process:
+- erase or comment *theplease* alias line from your Bash, Zsh, Fish, Powershell, tcsh, ... shell config
 - use your package manager (brew, pip3, pkg, crew, pip) to uninstall the binaries
 
 ## How it works
 
-*The Fuck* attempts to match the previous command with a rule. If a match is
+*The Please* attempts to match the previous command with a rule. If a match is
 found, a new command is created using the matched rule and executed. The
 following rules are enabled by default:
 
@@ -362,7 +362,7 @@ The following rules are enabled by default on specific platforms only:
 * `pacman_not_found` &ndash; fixes package name with `pacman`, `yay` or `yaourt`.
 * `yum_invalid_operation` &ndash; fixes invalid `yum` calls, like `yum isntall vim`;
 
-The following commands are bundled with *The Fuck*, but are not enabled by
+The following commands are bundled with *The Please*, but are not enabled by
 default:
 
 * `git_push_force` &ndash; adds `--force-with-lease` to a `git push` (may conflict with `git_push_pull`);
@@ -373,7 +373,7 @@ default:
 ## Creating your own rules
 
 To add your own rule, create a file named `your-rule-name.py`
-in `~/.config/thefuck/rules`. The rule file must contain two functions:
+in `~/.config/theplease/rules`. The rule file must contain two functions:
 
 ```python
 match(command: Command) -> bool
@@ -392,9 +392,9 @@ Your rule should not change `Command`.
 
 
 **Rules api changed in 3.0:** To access a rule's settings, import it with
- `from thefuck.conf import settings`
+ `from theplease.conf import settings`
 
-`settings` is a special object assembled from `~/.config/thefuck/settings.py`,
+`settings` is a special object assembled from `~/.config/theplease/settings.py`,
 and values from env ([see more below](#settings)).
 
 A simple example rule for running a script with `sudo`:
@@ -419,18 +419,18 @@ priority = 1000  # Lower first, default is 1000
 requires_output = True
 ```
 
-[More examples of rules](https://github.com/nvbn/thefuck/tree/master/thefuck/rules),
-[utility functions for rules](https://github.com/nvbn/thefuck/tree/master/thefuck/utils.py),
-[app/os-specific helpers](https://github.com/nvbn/thefuck/tree/master/thefuck/specific/).
+[More examples of rules](https://github.com/nvbn/theplease/tree/master/theplease/rules),
+[utility functions for rules](https://github.com/nvbn/theplease/tree/master/theplease/utils.py),
+[app/os-specific helpers](https://github.com/nvbn/theplease/tree/master/theplease/specific/).
 
 ##### [Back to Contents](#contents)
 
 ## Settings
 
-Several *The Fuck* parameters can be changed in the file `$XDG_CONFIG_HOME/thefuck/settings.py`
+Several *The Please* parameters can be changed in the file `$XDG_CONFIG_HOME/theplease/settings.py`
 (`$XDG_CONFIG_HOME` defaults to `~/.config`):
 
-* `rules` &ndash; list of enabled rules, by default `thefuck.const.DEFAULT_RULES`;
+* `rules` &ndash; list of enabled rules, by default `theplease.const.DEFAULT_RULES`;
 * `exclude_rules` &ndash; list of disabled rules, by default `[]`;
 * `require_confirmation` &ndash; requires confirmation before running new command, by default `True`;
 * `wait_command` &ndash; the max amount of time in seconds for getting previous command output;
@@ -495,12 +495,12 @@ export THEFUCK_NUM_CLOSE_MATCHES='5'
 ## Third-party packages with rules
 
 If you'd like to make a specific set of non-public rules, but would still like
-to share them with others, create a package named `thefuck_contrib_*` with
+to share them with others, create a package named `theplease_contrib_*` with
 the following structure:
 
 ```
-thefuck_contrib_foo
-  thefuck_contrib_foo
+theplease_contrib_foo
+  theplease_contrib_foo
     rules
       __init__.py
       *third-party rules*
@@ -509,19 +509,19 @@ thefuck_contrib_foo
   setup.py
 ```
 
-*The Fuck* will find rules located in the `rules` module.
+*The Please* will find rules located in the `rules` module.
 
 ##### [Back to Contents](#contents)
 
 ## Experimental instant mode
 
-The default behavior of *The Fuck* requires time to re-run previous commands.
-When in instant mode, *The Fuck* saves time by logging output with [script](https://en.wikipedia.org/wiki/Script_(Unix)),
+The default behavior of *The Please* requires time to re-run previous commands.
+When in instant mode, *The Please* saves time by logging output with [script](https://en.wikipedia.org/wiki/Script_(Unix)),
 then reading the log.
 
 [![gif with instant mode][instant-mode-gif-link]][instant-mode-gif-link]
 
-Currently, instant mode only supports Python 3 with bash or zsh. zsh's autocorrect function also needs to be disabled in order for thefuck to work properly.
+Currently, instant mode only supports Python 3 with bash or zsh. zsh's autocorrect function also needs to be disabled in order for theplease to work properly.
 
 To enable instant mode, add `--enable-experimental-instant-mode`
 to the alias initialization in `.bashrc`, `.bash_profile` or `.zshrc`.
@@ -529,7 +529,7 @@ to the alias initialization in `.bashrc`, `.bash_profile` or `.zshrc`.
 For example:
 
 ```bash
-eval $(thefuck --alias --enable-experimental-instant-mode)
+eval $(theplease --alias --enable-experimental-instant-mode)
 ```
 
 ##### [Back to Contents](#contents)
@@ -542,15 +542,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 Project License can be found [here](LICENSE.md).
 
 
-[version-badge]:   https://img.shields.io/pypi/v/thefuck.svg?label=version
-[version-link]:    https://pypi.python.org/pypi/thefuck/
-[workflow-badge]:  https://github.com/nvbn/thefuck/workflows/Tests/badge.svg
-[workflow-link]:   https://github.com/nvbn/thefuck/actions?query=workflow%3ATests
-[coverage-badge]:  https://img.shields.io/coveralls/nvbn/thefuck.svg
-[coverage-link]:   https://coveralls.io/github/nvbn/thefuck
+[version-badge]:   https://img.shields.io/pypi/v/theplease.svg?label=version
+[version-link]:    https://pypi.python.org/pypi/theplease/
+[workflow-badge]:  https://github.com/nvbn/theplease/workflows/Tests/badge.svg
+[workflow-link]:   https://github.com/nvbn/theplease/actions?query=workflow%3ATests
+[coverage-badge]:  https://img.shields.io/coveralls/nvbn/theplease.svg
+[coverage-link]:   https://coveralls.io/github/nvbn/theplease
 [license-badge]:   https://img.shields.io/badge/license-MIT-007EC7.svg
-[examples-link]:   https://raw.githubusercontent.com/nvbn/thefuck/master/example.gif
-[instant-mode-gif-link]:   https://raw.githubusercontent.com/nvbn/thefuck/master/example_instant_mode.gif
+[examples-link]:   https://raw.githubusercontent.com/nvbn/theplease/master/example.gif
+[instant-mode-gif-link]:   https://raw.githubusercontent.com/nvbn/theplease/master/example_instant_mode.gif
 [homebrew]:        https://brew.sh/
 [linuxbrew]:       https://linuxbrew.sh/
 

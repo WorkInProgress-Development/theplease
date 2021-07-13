@@ -1,25 +1,25 @@
-name: thefuck
+name: theplease
 version: stable
-version-script: git -C parts/thefuck/build describe --abbrev=0 --tags
+version-script: git -C parts/theplease/build describe --abbrev=0 --tags
 summary: Magnificent app which corrects your previous console command.
 description: |
-  The Fuck tries to match a rule for the previous command,
+  The Please tries to match a rule for the previous command,
   creates a new command using the matched rule and runs it.
 
 grade: stable
 confinement: classic
 
 apps:
-  thefuck:
-    command: bin/thefuck
+  theplease:
+    command: bin/theplease
     environment:
         PYTHONIOENCODING: utf-8
-  fuck:
-    command: bin/fuck
+  please:
+    command: bin/please
     environment:
         PYTHONIOENCODING: utf-8
 
 parts:
-  thefuck:
-    source: https://github.com/nvbn/thefuck.git
+  theplease:
+    source: https://github.com/nvbn/theplease.git
     plugin: python

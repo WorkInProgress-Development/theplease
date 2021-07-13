@@ -1,7 +1,7 @@
 import pytest
 from io import BytesIO
-from thefuck.types import Command
-from thefuck.rules.gulp_not_task import match, get_new_command
+from theplease.types import Command
+from theplease.rules.gulp_not_task import match, get_new_command
 
 
 def output(task):

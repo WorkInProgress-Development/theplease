@@ -1,6 +1,6 @@
 import pytest
-from thefuck.rules.sudo import match, get_new_command
-from thefuck.types import Command
+from theplease.rules.sudo import match, get_new_command
+from theplease.types import Command
 
 
 @pytest.mark.parametrize('output', [

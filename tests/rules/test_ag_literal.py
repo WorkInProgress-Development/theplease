@@ -1,6 +1,6 @@
 import pytest
-from thefuck.rules.ag_literal import get_new_command, match
-from thefuck.types import Command
+from theplease.rules.ag_literal import get_new_command, match
+from theplease.types import Command
 
 
 @pytest.fixture

@@ -1,6 +1,6 @@
 import pytest
-from thefuck.rules.apt_upgrade import get_new_command, match
-from thefuck.types import Command
+from theplease.rules.apt_upgrade import get_new_command, match
+from theplease.types import Command
 
 match_output = '''
 Listing... Done

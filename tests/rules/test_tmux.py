@@ -1,6 +1,6 @@
 import pytest
-from thefuck.rules.tmux import match, get_new_command
-from thefuck.types import Command
+from theplease.rules.tmux import match, get_new_command
+from theplease.types import Command
 
 
 @pytest.fixture
